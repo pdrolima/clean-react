@@ -1,3 +1,3 @@
 export interface HttpPostClient {
-    post (url): Promise<void>;
+  post: (url) => Promise<void>
 }
