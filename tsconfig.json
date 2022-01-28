@@ -20,5 +20,4 @@
     "resolveJsonModule": true
   },
   "include": ["src", "tests"],
-  "exclude": ["tests/e2e/cypress"]
 }
