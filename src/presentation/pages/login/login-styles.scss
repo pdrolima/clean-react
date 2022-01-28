@@ -1,50 +1,5 @@
 @import '../../styles/colors';
 
-* {
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: $background;
-}
-
-input[type="password"],
-input[type="email"],
-input[type="text"] {
-    padding: 0 8px;
-    border: 1px solid $primaryLight;
-    line-height: 40px;
-    border-radius: 4px;
-}
-
-button {
-    background-color: $primary;
-    line-height: 50px;
-    color: $white;
-    border-radius: 8px;
-    font-size: 16px;
-    border: none;
-    padding: 0 16px;
-    outline: none;
-    cursor: pointer;
-
-    &:hover {
-        opacity: 0.9;
-    }
-
-    &:disabled {
-        background-color: $disabledBackground;
-        color: $disabledColor;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
 
 .login {
     display: flex;
