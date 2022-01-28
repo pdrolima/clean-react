@@ -2,3 +2,4 @@ node_modules
 .idea
 coverage
 NOTES.md
+public/js
