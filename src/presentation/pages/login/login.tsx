@@ -1,11 +1,8 @@
 import React from 'react'
 import styles from './login-styles.scss'
-import { Spinner } from '@/presentation/components/spinner/spinner'
-import LoginHeader from '@/presentation/components/login-header/login-header'
-import Footer from '@/presentation/components/footer/footer'
-import Input from '@/presentation/components/input/input'
+import { LoginHeader, Footer, Input, FormStatus } from '@/presentation/components'
 
-export function Login (): JSX.Element {
+export default function Login (): JSX.Element {
   return (
     <div className={styles.login}>
           <LoginHeader />
@@ -17,10 +14,7 @@ export function Login (): JSX.Element {
               <span className={styles.link}>
                  Criar Conta
               </span>
-              <div className={styles.errorWrap}>
-                    <Spinner className={styles.spinner}/>
-                    <span className={styles.error}>Erro</span>
-              </div>
+              <FormStatus />
           </form>
           <Footer />
     </div>

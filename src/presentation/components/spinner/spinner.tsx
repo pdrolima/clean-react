@@ -5,7 +5,7 @@ type Props = {
   className?: React.HTMLAttributes<HTMLElement>['className']
 }
 
-export function Spinner (props: Props): JSX.Element {
+export default function Spinner (props: Props): JSX.Element {
   return (
         <div {...props} className={[styles.spinner, props.className].join(' ')}>
             <div/>
