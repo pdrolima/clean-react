@@ -4,11 +4,12 @@ import Spinner from '@/presentation/components/spinner/spinner'
 import FormContext from '@/presentation/contexts/form/form-context'
 
 const FormStatus = (): JSX.Element => {
-  const { isLoading, errorMessage } = useContext(FormContext)
+  const { state, errorState } = useContext(FormContext)
+  const { isLoading } = state
   return (
        <div data-testid="error-wrap" className={styles.errorWrap}>
            { isLoading && <Spinner className={styles.spinner} /> }
-           { errorMessage && <span className={styles.error}>{ errorMessage }</span> }
+           { errorState.main && <span className={styles.error}>{ errorState.main }</span> }
        </div>
   )
 }
