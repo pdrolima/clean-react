@@ -1,0 +1,150 @@
+@import '../../styles/colors';
+
+* {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"] {
+    padding: 0 8px;
+    border: 1px solid $primaryLight;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: $primary;
+    line-height: 50px;
+    color: $white;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    padding: 0 16px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:disabled {
+        background-color: $disabledBackground;
+        color: $disabledColor;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $primary;
+        border-top: 40px solid $primaryDark;
+
+        img {
+            margin-top: 40px;
+        }
+
+        h1 {
+            color: $white;
+            margin: 16px 0 40px;
+        }
+
+    }
+
+    .footer {
+        background-color: $primary;
+        height: 3rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        background-color: $white;
+        padding: 40px;
+        border-radius: 8px;
+        align-self: center;
+        box-shadow: 0 1px 3px -1px $black;
+
+        .errorWrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .error {
+                margin-top: 32px;
+                color: $primaryLight
+            }
+            .spinner {
+                margin-top: 32px;
+            }
+        }
+
+        .inputWrap {
+            margin-top: 16px;
+            display: flex;
+            position: relative;
+            align-items: center;
+
+            input {
+                flex-grow: 1;
+            }
+
+            .status {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                color: $white;
+                line-height: 40px;
+                text-align: center;
+                transition: all 0.3s ease;
+                cursor: help;
+            }
+        }
+
+
+        h2 {
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        button {
+            margin-top: 32px;
+        }
+
+        .link {
+            text-align: center;
+            color: $primary;
+            text-transform: lowercase;
+            margin-top: 16px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
