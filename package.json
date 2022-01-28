@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --open",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix .",
     "test": "jest --passWithNoTests",
@@ -39,6 +40,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-standard": "^5.0.0",
     "git-commit-msg-linter": "^4.0.7",
     "husky": "^7.0.0",
